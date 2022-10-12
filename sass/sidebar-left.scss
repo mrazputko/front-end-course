@@ -2,13 +2,14 @@
       padding: $padding_std;
       width: 320px;
       background-color: $color_green;
-      text-align: center;
       color: white;
 }
 
 .sidebar-left_header {
+      text-align: center;
       h2 {
             padding-bottom: $padding_std;
+            // text-align: center;
             font-family: $font_roboto_condensed;
             // font-family: $font_oswald;
       }
