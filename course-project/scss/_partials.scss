@@ -1,0 +1,10 @@
+// рамка слева от блока
+
+.block_border_left {
+	border-left: 1px solid black;
+	padding-left: $padding_dbl !important;
+}
+
+.block_border_right {
+	border-right: 1px solid black;
+}

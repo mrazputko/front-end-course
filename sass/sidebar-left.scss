@@ -1,0 +1,24 @@
+.sidebar-left {
+      padding: $padding_std;
+      width: 320px;
+      background-color: $color_green;
+      text-align: center;
+      color: white;
+}
+
+.sidebar-left_header {
+      h2 {
+            padding-bottom: $padding_std;
+            font-family: $font_roboto_condensed;
+            // font-family: $font_oswald;
+      }
+      img {
+            padding-bottom: $padding_std;
+            // width: 180px;
+            border-radius: 50%;
+            // border-bottom-left-radius: 10%;
+            // border-bottom-right-radius: 10%;
+            // border-top-right-radius: 10%;
+      }
+      border-bottom: 1px solid $color_green_dark;
+}

@@ -1,0 +1,47 @@
+.sidebar-left {
+  padding: 16px;
+  width: 320px;
+  background-color: rgb(67, 187, 129);
+  text-align: center;
+  color: white;
+}
+
+.sidebar-left_header {
+  border-bottom: 1px solid rgb(1, 161, 109);
+}
+.sidebar-left_header h2 {
+  padding-bottom: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.sidebar-left_header img {
+  padding-bottom: 16px;
+  border-radius: 50%;
+}
+
+.sidebar-main {
+  width: auto;
+  padding: 32px;
+  background-color: rgb(147, 226, 152);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+/*# sourceMappingURL=style.css.map */

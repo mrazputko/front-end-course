@@ -1,0 +1,303 @@
+@import "base";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	font-family: $font_lora;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+}
+
+.conteiner {
+}
+
+.conteiner__item {
+}
+
+// HEADER: ЛОГО, МЕНЮ, СОШИАЛ-ЛИНКС
+
+.navbar {
+	display: flex;
+      justify-content: center;
+      align-items: stretch;
+	padding: 0px $padding_std;
+	background-color: $color_rose-deep;
+	font-family: $font_sans;
+	height: $navbar_height;
+}
+
+.navbar-logo {
+	position: sticky;
+	top: 0;
+	background: green;
+}
+
+
+.header-nav {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+	position: sticky;
+	top: 0;
+	padding: 0px $padding_std;
+	background-color: $color_blue;
+	font-family: $font_sans;
+	height: $navbar_height;
+}
+
+// ЛОГО
+
+.header-nav-logo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: stretch;
+	padding: inherit;
+	// background-color: green;
+	img {
+		height: $navbar_height - 10;
+	}
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		// justify-content: flex-end;
+		padding: inherit;
+	}
+}
+
+// МЕНЮ
+
+.header-nav-menu {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	width: 60%;
+	padding: $padding_std;
+	// background-color: grey;
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		padding: $padding_std $padding_dbl;
+		border-bottom: 4px solid transparent;
+	}
+	&__item:hover {
+		border-bottom: 4px solid $color_dark;
+	}
+	&__item a {
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+
+// БЛОК СОЦІАЛЬНИХ КНОПОК
+
+.header-nav-social {
+	display: flex;
+	align-items: stretch;
+	padding: $padding_std;
+	// padding: inherit;
+	// background-color: green;
+	// width: 25%;
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		padding: 0px $padding_std;
+		// background-color: yellow;
+	}
+	&__item img {
+		height: $icon_height;
+	}
+}
+
+// ВТОРОЙ НАВ-БАР: поиск, юзер-логин и корзинка
+
+.header-user {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	background-color: $color_blue;
+	padding: 0px $padding_std;
+	height: $userbar_height;
+}
+
+
+.header-user-search {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	padding: $padding_std;
+	width: 60%;
+	background-color: yellow;
+	.search-form {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		// padding: $padding_std;
+		// display: flex;
+		.search-form__input {
+			padding: 8px;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid $color_dark
+		}
+		.search-form__button {
+			padding: $padding_std;
+			// display: inline-flex;
+			// align-items: center;
+			width: 120px;
+		}
+	}
+}
+
+.header-user-login {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	padding: $padding_std;
+	color: black;
+	font-family: $font_sans;
+	background-color: $color_dark;
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		padding: inherit;
+		border-bottom: 4px solid transparent;
+	}
+	&__item:hover {
+		border-bottom: 4px solid $color_sand;
+	}
+	&__item a {
+		// padding: inherit;
+		text-decoration: none;
+		color: white;
+		text-transform: lowercase;
+	}
+}
+
+.header-user-shop {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	background-color: $color_sand;
+	padding: inherit;
+	&__item {
+		display: inline-flex;
+		align-self: center;
+		padding: 0px $padding_hlf;
+	}
+	img {
+		height: $icon_height;
+	}
+}
+
+// CONTENT - 01 !!!
+
+.content-01 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: $padding_dbl;
+
+	&__lead-intro {
+		font-family: $font_sans;
+		font-size: 1.1rem;
+		padding: inherit;
+		width: 50%;
+		background-color: green;
+		h1 {
+			font-family: $font_lora;
+			padding: $padding_dbl 0px;
+		}
+	}
+	&__lead-image {
+		width: 50%;
+		// padding: inherit;
+		background-color: $color_sand;
+	}
+}
+
+// ************************************
+// FOOTER !!!
+// ************************************
+
+.footer {
+	// display: flex;
+	// justify-content: center;
+
+	padding: $padding_std;
+	background-color: $color_dark;
+
+	.footer-logo {
+		display: flex;
+		justify-content: center;
+		padding: inherit;
+		border-bottom: 1px solid #fff;
+		.logo img {
+			height: $navbar_height;
+		}
+	}
+	.footer-data {
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+
+		padding: inherit;
+		color: white;
+
+		font-family: $font_sans;
+		h2, h3 {
+			font-family: $font_roboto-slab;
+			font-weight: normal;
+			padding: $padding_hlf 0px;
+			border-bottom: 1px dashed white;
+		}
+
+		ul {
+			list-style: none;
+			padding-inline-start: 0px;
+			li i {margin-right: 16px;}
+			li a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+
+	.footer-data-contacts {
+		padding: 0px $padding_dbl;
+	}
+
+	.footer-data-info {
+		padding: 0px $padding_dbl;
+	}
+
+	.footer-data-cat {
+		padding: 0px $padding_dbl;
+	}
+
+	.footer-data-hren {
+		padding: 0px $padding_dbl;
+		.footer-data-hren__subscribe {
+			// background-color: yellow;
+		}
+		&__social {
+			padding: $padding_std;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		// display: flex;
+		// flex-direction: column;
+		// align-items: flex-end;
+		// justify-content: center;
+	}
+
+}
